@@ -5,7 +5,7 @@ const readline = require('node:readline');
 
 class Writer {
   onExit () {
-    console.log('Сообщение сохранено! Пока!')
+    console.log('Сообщение сохранено! Пока!');
     process.exit();
   }
 
