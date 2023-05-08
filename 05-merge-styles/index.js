@@ -34,7 +34,7 @@ function readStyles(path) {
 }
 
 function copyFiles(files) {
-  files.forEach((file, i) => {
+  files.forEach((file) => {
     fs.stat(path.join(stylesFolder, file), (err, stats) => {
       if(err) console.error(err.message);
 
