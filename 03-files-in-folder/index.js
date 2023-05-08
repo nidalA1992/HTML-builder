@@ -3,7 +3,8 @@ const path = require('path');
 
 const secretFolder = path.join(__dirname, 'secret-folder');
 
-fs.readdir(secretFolder,(err, files) => {
+fs.readdir(secretFolder, (err, files) => {
+  if(err) console.error(err.message);
 
   files.forEach(file => {
     fs.stat(path.join(secretFolder, file), (err, stats) => {
